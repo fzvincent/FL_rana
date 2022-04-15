@@ -249,9 +249,9 @@ for i in range(repetion):
         #    valid5sTier[i,j,k,:]=fedAvgTier(state,k+1,i)
 
         #validNum [i, j, :],validNumTime[i,j,:] = fedNum(state, 5)
-        validData[0,j,:,i]=fedAvg(state)
+        validData[0, j, :, i]=fedAvg(state)
 
-        validData[1, j, :,i] = fedGreen(state)
+        validData[1, j, :, i] = fedGreen(state)
         validData[2, j, :, i] = fedLearn(state)
 
 ## data save

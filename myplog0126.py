@@ -1,4 +1,4 @@
-
+import numpy as np
 from matplotlib import pyplot as plt
 from var import *
 sizeH=9
@@ -9,7 +9,7 @@ validData = mydata["validData"]
 # 0 for FedAvg
 # 1 for Green
 # 2 for Learn
-
+a=np.average(validData,axis=3)
 
 
 for i in range(betaCount):
@@ -20,8 +20,9 @@ for i in range(betaCount):
     plt.legend()
     plt.xlabel('Global iterations')
     plt.ylabel('Test accuracy')
-    plt.show()
+
     plt.savefig('f' + str(i) + '.pdf')
+    plt.show()
 
 
 
